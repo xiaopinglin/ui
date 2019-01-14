@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LayUI后台管理模板</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="favicon.ico">
+	<!-- layui -->
+	<link rel="stylesheet" href="layui/css/layui.css" media="all" />
+	<!-- 自定义 index.css  -->
+	<link rel="stylesheet" href="css/index.css" media="all" />
+</head>
+<body class="main_body">
+	<div class="layui-layout layui-layout-admin">
+		<!-- 顶部 -->
+		<div class="layui-header header">
+			<div class="layui-main mag0">
+				<a href="#" class="logo">
+					<img src="images/layui.png" width="70px" height="30px">
+				</a>
+				<!-- 显示/隐藏菜单 -->
+				<a href="javascript:;" class="hideMenu"><i class="layui-icon layui-icon-shrink-right" style="font-size: 14px;"></i></a>
+				<!-- 顶级菜单 -->
+				<ul class="layui-nav topLevelMenus">
+					<li class="layui-nav-item layui-this" data-menu="zj"><a href="javascript:;"><i class="layui-icon layui-icon-component"></i><cite>组件</cite></a></li>
+					<li class="layui-nav-item" data-menu="mb"><a href="javascript:;"><i class="layui-icon layui-icon-template"></i><cite>模板</cite></a></li>
+					<li class="layui-nav-item" data-menu="cj"><a href="javascript:;"><i class="layui-icon layui-icon-app"></i><cite>插件</cite></a></li>
+					<li class="layui-nav-item" data-menu="sz"><a href="javascript:;"><i class="layui-icon layui-icon-set"></i><cite>设置</cite></a></li>
+				</ul>
+			    <!-- 顶部右侧菜单 -->
+			    <ul class="layui-nav top_menu">
+					<li class="layui-nav-item" id="notice">
+                        <a href="javascript:;" class="showNotice" title="通知公告"><i class="layui-icon layui-icon-notice"></i><span class="layui-badge-dot"></span></a>
+					</li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;" class="changeSkin" title="切换主题"><i class="layui-icon layui-icon-theme"></i></a>
+                    </li>
+                    <li class="layui-nav-item" >
+                        <a href="javascript:;" class="clearCache" title="清除设定"><i class="layui-icon layui-icon-delete"></i></a>
+                    </li>
+                    <li class="layui-nav-item lockcms">
+                        <a href="javascript:;" title="锁定屏幕"><i class="layui-icon layui-icon-password"></i></a>
+                    </li>
+					<li class="layui-nav-item" id="userInfo">
+						<a href="javascript:;"><img src="images/userface4.jpg" class="layui-nav-img userAvatar" width="35" height="35"><cite class="adminName">系统管理员</cite></a>
+						<dl class="layui-nav-child">
+							<dd><a href="javascript:;" data-url="page/user/userInfo.html"><i class="layui-icon layui-icon-user"></i><cite>个人资料</cite></a></dd>
+							<dd><a href="javascript:;" data-url="page/user/changePwd.html"><i class="layui-icon layui-icon-edit"></i><cite>修改密码</cite></a></dd>
+                            <dd><a href="javascript:;" class="functionSetting"><i class="layui-icon layui-icon-set"><cite>功能设定</cite></i></a></dd>
+							<dd><a href="page/login/login.html" class="signOut"><i class="layui-icon layui-icon-unlink"></i><cite>退出系统</cite></a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 左侧导航 -->
+		<div class="layui-side layui-bg-black">
+			<div class="navBar layui-side-scroll" id="navBar">
+				<ul class="layui-nav layui-nav-tree">
+					<li class="layui-nav-item layui-this">
+						<a href="javascript:;" data-url="page/main.html"><i class="layui-icon" data-icon=""></i><cite>首页</cite></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 右侧内容 -->
+		<div class="layui-body layui-form">
+			<div class="layui-tab mag0" lay-filter="nav" id="top_tabs_box">
+				<ul class="layui-tab-title top_tab" id="top_tabs">
+					<li class="layui-this" lay-id=""><i class="layui-icon">&#xe68e;</i> <cite>首页</cite></li>
+				</ul>
+				<ul class="layui-nav closeBox">
+					<li class="layui-nav-item">
+						<a href="javascript:;"><i class="layui-icon caozuo">&#xe643;</i> 选项操作</a>
+						<dl class="layui-nav-child">
+							<dd><a href="javascript:;" class="refresh refreshThis"><i class="seraph layui-icon layui-icon-refresh"></i> 刷新当前</a></dd>
+							<dd><a href="javascript:;" class="closePageOther"><i class="seraph layui-icon layui-icon-close"></i> 关闭其他</a></dd>
+							<dd><a href="javascript:;" class="closePageAll"><i class="seraph layui-icon layui-icon-close-fill"></i> 关闭全部</a></dd>
+						</dl>
+					</li>
+				</ul>
+				<div class="layui-tab-content clildFrame">
+					<div class="layui-tab-item layui-show">
+						<iframe src="page/main.html"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="layui-footer footer">
+			<p><span>copyright @2018</span></p>
+		</div>
+	</div>
+
+	<!-- layui -->
+	<script type="text/javascript" src="layui/layui.js"></script>
+	<!-- 自定义 -->
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/cache.js"></script>
+</body>
+</html>

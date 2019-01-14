@@ -1,0 +1,335 @@
+{
+	"zj": [
+		{
+			"title": "栅格",
+			"icon": "&#xe66b;",
+			"href": "page/component/grid/grid.html",
+			"spread": false
+		},{
+			"title": "按钮",
+			"icon": "&#xe60f;",
+			"href": "page/component/button/btn.html",
+			"spread": false
+		},{
+			"title": "表单",
+			"icon": "&#xe63c;",
+			"href": "page/component/form/form.html",
+			"spread": false
+		},{
+			"title": "导航",
+			"icon": "&#xe609;",
+			"href": "page/component/nav/nav.html",
+			"spread": false
+		},{
+			"title": "选项卡",
+			"icon": "&#xe62a;",
+			"href": "page/component/tabs/tabs.html",
+			"spread": false
+		},{
+			"title": "进度条",
+			"icon": "&#xe65f;",
+			"href": "page/component/progress/progress.html",
+			"spread": false
+		},
+		{
+			"title": "面板",
+			"icon": "&#xe632;",
+			"href": "page/component/panel/panel.html",
+			"spread": false
+		},{
+			"title": "徽章",
+			"icon": "&#xe617;",
+			"href": "page/component/badge/badge.html",
+			"spread": false
+		},{
+			"title": "时间线",
+			"icon": "&#xe665;",
+			"href": "page/component/timeline/timeline.html",
+			"spread": false
+		},{
+			"title": "动画",
+			"icon": "&#xe66a;",
+			"href": "page/component/anim/anim.html",
+			"spread": false
+		},{
+			"title": "辅助",
+			"icon": "&#xe635;",
+			"href": "page/component/auxiliar/auxiliar.html",
+			"spread": false
+		},{
+			"title": "通用弹层",
+			"icon": "&#xe638;",
+			"href": "page/component/layer/layer.html",
+			"spread": false
+		},{
+			"title": "日期时间",
+			"icon": "&#xe637;",
+			"href": "page/component/laydate/laydate.html",
+			"spread": false
+		},{
+			"title": "数据表格",
+			"icon": "&#xe62d;",
+			"spread": false,
+			"children": [
+				{
+					"title": "静态表格",
+					"href": "page/component/table/static.html",
+					"spread": false
+				},{
+					"title": "简单数据表格",
+					"href": "page/component/table/simple.html",
+					"spread": false
+				},{
+					"title": "列宽自动分配",
+					"href": "page/component/table/auto.html",
+					"spread": false
+				},{
+					"title": "赋值已知数据",
+					"href": "page/component/table/data.html",
+					"spread": false
+				},{
+					"title": "转化静态表格",
+					"href": "page/component/table/tostatic.html",
+					"spread": false
+				},{
+					"title": "开启分页",
+					"href": "page/component/table/page.html",
+					"spread": false
+				},{
+					"title": "自定义分页",
+					"href": "page/component/table/resetPage.html",
+					"spread": false
+				},{
+					"title": "高度最大适应",
+					"href": "page/component/table/height.html",
+					"spread": false
+				},{
+					"title": "开启复选框",
+					"href": "page/component/table/checkbox.html",
+					"spread": false
+				},{
+					"title": "开启单元格编辑",
+					"href": "page/component/table/cellEdit.html",
+					"spread": false
+				},{
+					"title": "加入表单元素",
+					"href": "page/component/table/form.html",
+					"spread": false
+				},{
+					"title": "设置单元格样式",
+					"href": "page/component/table/style.html",
+					"spread": false
+				},{
+					"title": "固定列",
+					"href": "page/component/table/fixed.html",
+					"spread": false
+				},{
+					"title": "数据操作",
+					"href": "page/component/table/operate.html",
+					"spread": false
+				},{
+					"title": "数据表格的重载",
+					"href": "page/component/table/reload.html",
+					"spread": false
+				},{
+					"title": "设置初始排序",
+					"href": "page/component/table/initSort.html",
+					"spread": false
+				},{
+					"title": "监听单元格事件",
+					"href": "page/component/table/cellEvent.html",
+					"spread": false
+				},{
+					"title": "复杂表头",
+					"href": "page/component/table/thead.html",
+					"spread": false
+				}
+			]
+		},{
+			"title": "分页",
+			"icon": "&#xe633;",
+			"href": "page/component/laypage/laypage.html",
+			"spread": false
+		},{
+			"title": "上传",
+			"icon": "&#xe681;",
+			"href": "page/component/upload/upload.html",
+			"spread": false
+		},{
+			"title": "评分",
+			"icon": "&#xe600;",
+			"href": "page/component/rate/rate.html",
+			"spread": false
+		},{
+			"title": "轮播",
+			"icon": "&#xe634;",
+			"href": "page/component/carousel/carousel.html",
+			"spread": false
+		},{
+			"title": "流加载",
+			"icon": "&#xe63d;",
+			"href": "page/component/flow/flow.html",
+			"spread": false
+		},{
+			"title": "工具",
+			"icon": "&#xe631",
+			"href": "page/component/util/util.html",
+			"spread": false
+		}
+	],
+	"mb": [
+		{
+			"title": "个人主页",
+			"icon": "&#xe604;",
+			"href": "page/template/personalpage.html",
+			"spread": false
+		},{
+			"title": "通讯录",
+			"icon": "&#xe705;",
+			"href": "page/template/addresslist.html",
+			"spread": false
+		},{
+			"title": "商品列表",
+			"icon": "&#xe657;",
+			"href": "page/template/goodslist.html",
+			"spread": false
+		},{
+			"title": "留言板",
+			"icon": "&#xe63c;",
+			"href": "page/template/msgboard.html",
+			"spread": false
+		},{
+			"title": "搜索结果",
+			"icon": "&#xe615;",
+			"href": "page/template/search.html",
+			"spread": false
+		},{
+			"title": "注册",
+			"icon": "&#xe66e;",
+			"target": "_blank",
+			"href": "page/template/reg.html",
+			"spread": false
+		},{
+			"title": "登入",
+			"icon": "&#x1005;",
+			"href": "page/template/login.html",
+			"target": "_blank",
+			"spread": false
+		},{
+			"title": "忘记密码",
+			"icon": "&#xe60b;",
+			"target": "_blank",
+			"href": "page/template/forget.html",
+			"spread": false
+		},{
+			"title": "404页面不存在",
+			"icon": "&#xe61c;",
+			"href": "page/template/404.html",
+			"spread": false
+		},{
+			"title": "错误提示",
+			"icon": "&#xe64f;",
+			"href": "page/template/error.html",
+			"spread": false
+		},{
+			"title": "三级联动",
+			"icon": "&#xe630;",
+			"href": "page/template/address.html",
+			"spread": false
+		},{
+			"title": "门户模板",
+			"icon": "&#xe62d;",
+			"spread": false,
+			"children": [
+				{
+					"title": "博客模板",
+					"href": "page/template/site/blog/html/index.html",
+					"target": "_blank",
+					"spread": false
+				},{
+					"title": "公用门户",
+					"href": "page/template/site/public/html/index.html",
+					"target": "_blank",
+					"spread": false
+				},{
+					"title": "母婴商城",
+					"href": "page/template/site/shopping/html/index.html",
+					"target": "_blank",
+					"spread": false
+				},{
+					"title": "网络公司",
+					"href": "page/template/site/network/html/index.html",
+					"target": "_blank",
+					"spread": false
+				},{
+					"title": "闲言模板",
+					"href": "page/template/site/gossip/html/index.html",
+					"target": "_blank",
+					"spread": false
+				}
+			]
+		}
+	],
+	"cj": [
+		{
+			"title": "Echarts集成",
+			"icon": "&#xe62c;",
+			"spread": false,
+			"children": [
+				{
+					"title": "折线图",
+					"href": "page/plugins/echarts/line.html",
+					"spread": false
+				},{
+					"title": "柱状图",
+					"href": "page/plugins/echarts/bar.html",
+					"spread": false
+				},{
+					"title": "地图",
+					"href": "page/plugins/echarts/map.html",
+					"spread": false
+				}
+			]
+		},{
+			"title": "Tree集成",
+			"icon": "&#xe62e;",
+			"href": "page/plugins/tree/basetree.html",
+			"spread": false
+		}
+	],
+	"sz": [
+		{
+			"title": "系统设置",
+			"icon": "&#xe614;",
+			"spread": false,
+			"children": [
+				{
+					"title": "网站设置",
+					"href": "page/set/system/website.html",
+					"spread": false
+				},{
+					"title": "邮件服务",
+					"href": "page/set/system/email.html",
+					"spread": false
+				}
+			]
+		},{
+			"title": "我的设置",
+			"icon": "&#xe770;",
+			"spread": false,
+			"children": [
+				{
+					"title": "基本资料",
+					"href": "page/set/user/info.html",
+					"spread": false
+				},{
+					"title": "修改密码",
+					"href": "page/set/user/password.html",
+					"spread": false
+				}
+			]
+		}
+	]
+}
+
+

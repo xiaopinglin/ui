@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>基于LayUI的后台管理系统</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- layui样式 -->
+	<link rel="stylesheet" href="../../layui/css/layui.css" media="all">
+	<!-- 自定义样式 -->
+	<link rel="stylesheet" href="../../css/template.css" media="all">
+	<style type="text/css">
+		html{
+			background-color: #f2f2f2;
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+<div class="layui-user-login">
+	<div class="layui-user-login-main">
+		<div class="layui-user-login-box layui-user-login-header">
+			<h2>LayUI</h2>
+			<p>基于LayUI的后台管理系统</p>
+		</div>
+		<div class="layui-user-login-box layui-user-login-body layui-form">
+			<div class="layui-form-item">
+				<label class="layui-user-login-icon layui-icon layui-icon-cellphone" for="cellphone"></label>
+				<input type="text" name="cellphone" id="cellphone" lay-verify="phone" placeholder="手机" class="layui-input">
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-row">
+					<div class="layui-col-xs7">
+						<label class="layui-user-login-icon layui-icon layui-icon-vercode" for="vercode"></label>
+						<input type="text" name="vercode" id="vercode" lay-verify="required" placeholder="验证码" class="layui-input">
+					</div>
+					<div class="layui-col-xs5">
+						<div style="margin-left: 10px;">
+							<button type="button" class="layui-btn layui-btn-primary layui-btn-fluid" id="btn_getsmscode">获取验证码</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-user-login-icon layui-icon layui-icon-password" for="password"></label>
+				<input type="password" name="password" id="password" lay-verify="required" placeholder="密码" class="layui-input">
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-user-login-icon layui-icon layui-icon-password" for="repass"></label>
+				<input type="password" name="repass" id="repass" lay-verify="required" placeholder="确认密码" class="layui-input">
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-user-login-icon layui-icon layui-icon-username" for="nickname"></label>
+				<input type="text" name="nickname" id="nickname" lay-verify="nickname" placeholder="昵称" class="layui-input">
+			</div>
+			<div class="layui-form-item">
+				<input type="checkbox" name="agreement" lay-skin="primary" title="同意用户协议" checked>
+			</div>
+			<div class="layui-form-item">
+				<button class="layui-btn layui-btn-fluid" lay-submit lay-filter="btn_reg">注 册</button>
+			</div>
+			<div class="layui-trans layui-form-item layui-user-login-other">
+				<label>社交账号注册</label>
+				<a href="javascript:;"><i class="layui-icon layui-icon-login-qq"></i></a>
+				<a href="javascript:;"><i class="layui-icon layui-icon-login-wechat"></i></a>
+				<a href="javascript:;"><i class="layui-icon layui-icon-login-weibo"></i></a>
+				<a href="login.html" class="layui-user-jump-change layadmin-link layui-hide-xs">用已有帐号登入</a>
+				<a href="login.html" class="layui-user-jump-change layadmin-link layui-hide-sm layui-show-xs-inline-block">登入</a>
+			</div>
+		</div>
+	</div>
+    <div class="layui-trans layui-user-login-footer">
+        <p>© 2018 <a href="http://www.layui.com/" target="_blank">layui.com</a></p>
+        <p>
+            <span><a href="#" target="_blank">友情链接</a></span>
+            <span><a href="#" target="_blank">百度贴吧</a></span>
+            <span><a href="#" target="_blank">新浪微博</a></span>
+        </p>
+    </div>
+</div>
+<!-- layui脚本 -->
+<script src="../../layui/layui.js"></script>
+<script>
+    layui.use(['form'], function(){
+        var form = layui.form;
+        form.render();
+        //提交
+        form.on('submit(btn_reg)', function(obj){
+            var field = obj.field;
+            //确认密码
+            if(field.password !== field.repass){
+                return layer.msg('两次密码输入不一致');
+            }
+            //是否同意用户协议
+            if(!field.agreement) {
+                return layer.msg('你必须同意用户协议才能注册');
+            }
+
+            window.location.href="login.html";
+        });
+    });
+
+</script>
+</body>
+</html>
